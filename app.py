@@ -15,8 +15,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    #return "Welcome to Diabetic predictions"
-    return render_template("index.html")
+    return "Welcome to Diabetic predictions"
+    #return render_template("index.html")
 
 @app.route('/predict', methods=["POST"])
 def predict():
