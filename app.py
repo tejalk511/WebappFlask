@@ -8,7 +8,9 @@ import numpy as np
 import pandas as pd
 
 #load pickle model
-model = pickle.load(open('model1.pkl','rb'))
+#model = pickle.load(open('model1.pkl','rb'))
+with open('model1.pkl', 'rb') as f:
+     model = pickle.open(f)
 
 #create flask app
 app = Flask(__name__)
